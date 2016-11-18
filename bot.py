@@ -15,8 +15,6 @@ def repeat_all_messages(message):
         bot.send_message(message.chat.id, text='Короче, гребни, здесь новый положняк: кто кальян не помоет за собой, того в жопу драть будем всей хатой! Добра, арестанты.')
     elif message.text == "сам иди":
         bot.send_message(message.chat.id, text='Окей (((')
-    else:
-        bot.send_message(message.chat.id, text='А шо оно мне надо')
 
 
 if __name__ == '__main__':
