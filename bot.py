@@ -13,8 +13,6 @@ def repeat_all_messages(message):
         bot.send_message(message.chat.id, text='По фене ботаю - нигде не работаю, по фене брякаю - ебу работу всякую. Ты чё, черт, ахуел? Мусора совсем лагерь перекрасили, и некому разморозить')
     elif message.text == "Положняк":
         bot.send_message(message.chat.id, text='Короче, гребни, здесь новый положняк: кто кальян не помоет за собой, того в жопу драть будем всей хатой! Добра, арестанты.')
-    elif message.text == "сам иди":
-        bot.send_message(message.chat.id, text='Окей (((')
 
 
 if __name__ == '__main__':
