@@ -1,1 +1,0 @@
-/home/yegor/Kern/minebot/CMakeFiles/minebot.dir
