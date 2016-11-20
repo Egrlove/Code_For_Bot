@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yegor/Kern/minebot/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec403756832/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec403756832.dir/build.make CMakeFiles/cmTryCompileExec403756832.dir/build
+make[1]: Вход в каталог `/home/yegor/Kern/minebot/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/yegor/Kern/minebot/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec403756832.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec403756832.dir/CheckSymbolExists.c.o   -c /home/yegor/Kern/minebot/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec403756832
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec403756832.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec403756832.dir/CheckSymbolExists.c.o  -o cmTryCompileExec403756832 -rdynamic 
+CMakeFiles/cmTryCompileExec403756832.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Выход из каталога `/home/yegor/Kern/minebot/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec403756832] Ошибка 1
+make: *** [cmTryCompileExec403756832/fast] Ошибка 2
+
+File /home/yegor/Kern/minebot/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yegor/Kern/minebot/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec835624160/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec835624160.dir/build.make CMakeFiles/cmTryCompileExec835624160.dir/build
+make[1]: Вход в каталог `/home/yegor/Kern/minebot/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/yegor/Kern/minebot/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec835624160.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec835624160.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec835624160
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec835624160.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec835624160.dir/CheckFunctionExists.c.o  -o cmTryCompileExec835624160 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec835624160] Ошибка 1
+make[1]: Выход из каталога `/home/yegor/Kern/minebot/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec835624160/fast] Ошибка 2
+
+

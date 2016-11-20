@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11    CMakeFiles/minebot.dir/src/mine.cc.o  -o minebot -rdynamic /usr/local/lib/libTgBot.a -lpthread -lssl -lcrypto /usr/local/lib/libboost_system.so /usr/local/lib/libboost_iostreams.so /usr/local/lib/libboost_unit_test_framework.so -Wl,-rpath,/usr/local/lib 
